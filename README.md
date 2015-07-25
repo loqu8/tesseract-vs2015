@@ -5,10 +5,6 @@ Tesseract OCR engine dependencies with VS 2013 support, both 64 and 32 bit.
 
 This repository contains the dependencies for Google's [Tesseract OCR project](https://code.google.com/p/tesseract-ocr/) for tesseract 3.03 and leptonica 1.71, along with dependencies for everything but WEBP support.
 
-### Note
-
-These instructions and the patch are out of date. I'll try and update them when I have the time, unless someone beats me too it :)
-
 ### Build Instructions
 
 1. Open VS 2013 Developer Command Prompt and change the directory to this repository.
@@ -20,10 +16,13 @@ The build libraries and headers will be copied to ``~\release`` when done.
 
 **Note:** The following assumes that your working directory is ``C:\tesseract-build\``, however this can be wherever you want.
 
-1. Checkout the tesseract source from [GIT Repo](https://code.google.com/p/tesseract-ocr/source/checkout) into ``C:\tesseract-build\tesseract``.
-2. Apply the ``vs2013+64bit_support.patch`` to the tesseract source (this creates a new VS 2013 solution located at ``C:\tesseract-build\tesseract\vs2013\tesseract.sln``).
-3. Copy the previously built dependencies to the parent directory (e.g. ``C:\tesseract-build\``)
-4. Open the ``C:\tesseract-build\tesseract\vs2013\tesseract.sln`` solution in VS 2013 and build your desired configuration.
+1. Copy ``vs2013+64bit_support.patch`` to ``C:\tesseract-build\``
+2. Checkout the tesseract source from [GIT Repo](https://github.com/tesseract-ocr/tesseract.git) into ``C:\tesseract-build\tesseract``.
+3. Open a new git prompt at ``C:\tesseract-build\tesseract`` enter:
+    1. ``git checkout -b 3.04-vs2013 3.04.00`` to checkout the ``3.04.00`` tag into a new branch named ``3.04-vs2013``
+    2. ``git am --signoff < ../vs2013+64bit_support.patch`` to apply the ``vs2013+64bit_support.patch`` to the tesseract source (this creates a new VS 2013 solution located at ``C:\tesseract-build\tesseract\vs2013\tesseract.sln``).
+4. Copy the previously built dependencies to the parent directory (e.g. ``C:\tesseract-build\``)
+5. Open the ``C:\tesseract-build\tesseract\vs2013\tesseract.sln`` solution in VS 2013 and build your desired configuration.
 
 ## License
 
