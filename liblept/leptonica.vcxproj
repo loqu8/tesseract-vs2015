@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>liblept-171</ProjectName>
+    <ProjectName>liblept-172</ProjectName>
     <ProjectGuid>{1D7AB886-BECA-4A97-89CE-7381D3F5DE00}</ProjectGuid>
     <RootNamespace>liblept</RootNamespace>
     <Keyword>Win32Proj</Keyword>
@@ -48,7 +48,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB_Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="Configuration">
@@ -62,11 +62,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIB_Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="Configuration">
@@ -455,6 +455,7 @@
     <ClCompile Include="src\bmf.c" />
     <ClCompile Include="src\bmpio.c" />
     <ClCompile Include="src\bmpiostub.c" />
+    <ClCompile Include="src\bootnumgen.c" />
     <ClCompile Include="src\boxbasic.c" />
     <ClCompile Include="src\boxfunc1.c" />
     <ClCompile Include="src\boxfunc2.c" />
@@ -486,6 +487,7 @@
     <ClCompile Include="src\dwacomb.2.c" />
     <ClCompile Include="src\dwacomblow.2.c" />
     <ClCompile Include="src\edge.c" />
+    <ClCompile Include="src\encoding.c" />
     <ClCompile Include="src\enhance.c" />
     <ClCompile Include="src\fhmtauto.c" />
     <ClCompile Include="src\fhmtgen.1.c" />
@@ -592,6 +594,7 @@
     <ClCompile Include="src\skew.c" />
     <ClCompile Include="src\spixio.c" />
     <ClCompile Include="src\stack.c" />
+    <ClCompile Include="src\stringcode.c" />
     <ClCompile Include="src\sudoku.c" />
     <ClCompile Include="src\textops.c" />
     <ClCompile Include="src\tiffio.c" />
@@ -615,6 +618,7 @@
     <ClInclude Include="include\bbuffer.h" />
     <ClInclude Include="include\bilateral.h" />
     <ClInclude Include="include\bmf.h" />
+    <ClInclude Include="include\bmfdata.h" />
     <ClInclude Include="include\bmp.h" />
     <ClInclude Include="include\ccbord.h" />
     <ClInclude Include="include\dewarp.h" />
@@ -634,6 +638,7 @@
     <ClInclude Include="include\recog.h" />
     <ClInclude Include="include\regutils.h" />
     <ClInclude Include="include\stack.h" />
+    <ClInclude Include="include\stringcode.h" />
     <ClInclude Include="include\sudoku.h" />
     <ClInclude Include="include\watershed.h" />
   </ItemGroup>
