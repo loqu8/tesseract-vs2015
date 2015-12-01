@@ -159,9 +159,6 @@
     <ClCompile Include="src\enc\picture_tools.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\enc\quant.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\enc\syntax.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -220,6 +217,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\utils\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\enc\quant.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
