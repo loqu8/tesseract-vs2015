@@ -69,9 +69,12 @@
 		
 		<Header Include="$(LibGifDir)\include\gif_lib.h" />
 
-    <Header Include="$(LibWebpDir)\src\webp\*.h" />
 
-    <LeptHeader Include="$(LibLeptDir)\include\*.h" />
+		<Header Include="$(LibWebpDir)\src\webp\*.h" />
+
+		<Header Include="include\leptonica_versionnumbers.props" />
+
+		<LeptHeader Include="$(LibLeptDir)\include\*.h" />
 	</ItemGroup>
 	<Target Name="ExpandFlavors">
 		<CreateItem Include="@(Flavor)" AdditionalMetadata="Properties=Configuration=%(Flavor.Configuration)%3BPlatform=%(Flavor.Platform)">
