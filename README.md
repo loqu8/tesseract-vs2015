@@ -1,13 +1,13 @@
 tesseract-vs2013
 ================
 
-Tesseract OCR engine dependencies with VS 2013 support, both 64 and 32 bit.
+Tesseract OCR engine dependencies with VS 2015 support, both 64 and 32 bit.
 
-This repository contains the dependencies for Google's [Tesseract OCR project](https://code.google.com/p/tesseract-ocr/) for tesseract 3.03 and leptonica 1.71, along with dependencies for everything but WEBP support.
+This repository contains the dependencies for Google's [Tesseract OCR project](https://code.google.com/p/tesseract-ocr/) for tesseract 3.04 and leptonica 1.72, along with dependencies for everything but JPEG2000 support.
 
 ### Build Instructions
 
-1. Open VS 2013 Developer Command Prompt and change the directory to this repository.
+1. Open VS 2015 Developer Command Prompt and change the directory to this repository.
 2. Execute the following command ``msbuild build.proj``
 
 The build libraries and headers will be copied to ``~\release`` when done.
@@ -33,5 +33,6 @@ All projects are made available under their original license(s).
 * LibJpeg - ``~/libjpeg/README``
 * LibPng - ``~/libpng/LICENSE``
 * libtff - ``~/libtiff/COPYRIGHT``
+* libwebp - ``~/libwebp/COPYING``
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
